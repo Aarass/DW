@@ -1,0 +1,8 @@
+services:
+  nifi:
+    ports:
+      - 8443:8443
+    environment:
+      - SINGLE_USER_CREDENTIALS_USERNAME=admin
+      - SINGLE_USER_CREDENTIALS_PASSWORD=adminadminadmin
+    image: apache/nifi:latest
