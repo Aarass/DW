@@ -13,6 +13,8 @@ services:
       - nifi_provenance:/opt/nifi/nifi-current/provenance_repository
       - nifi_state:/opt/nifi/nifi-current/state
       - nifi_database:/opt/nifi/nifi-current/database_repository
+      - ./drivers/postgresql-driver.jar:/opt/nifi/nifi-current/lib/postgresql.jar
+      - ./drivers/oracle-driver.jar:/opt/nifi/nifi-current/lib/oracle.jar
 
 volumes:
   nifi_conf:
