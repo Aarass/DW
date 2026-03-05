@@ -15,6 +15,7 @@ services:
       - nifi_database:/opt/nifi/nifi-current/database_repository
       - ./drivers/postgresql-driver.jar:/opt/nifi/nifi-current/lib/postgresql.jar
       - ./drivers/oracle-driver.jar:/opt/nifi/nifi-current/lib/oracle.jar
+      - ./documents:/usr/share/documents
 
 volumes:
   nifi_conf:
