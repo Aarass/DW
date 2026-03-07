@@ -35,7 +35,11 @@ CREATE TABLE products (
   product_height_cm          NUMBER,
   product_width_cm           NUMBER,
 
-  CONSTRAINT pk_products PRIMARY KEY (product_id)
+  CONSTRAINT pk_products PRIMARY KEY (product_id),
+
+  CONSTRAINT fk_products_category
+    FOREIGN KEY (product_category_name)
+    REFERENCES product_translation(product_category_name)
 );
 
 -- PRODUCT CATEGORY NAME TRANSLATION
