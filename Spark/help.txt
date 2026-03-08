@@ -1,0 +1,6 @@
+set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.14
+set PATH=%JAVA_HOME%\bin;%PATH%
+java -version
+python main_r.py
+
+source venv/Scripts/activate
